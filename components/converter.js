@@ -1,4 +1,5 @@
-import { PDFDocument, rgb } from "pdf-lib";
+import { PDFDocument} from "pdf-lib";
+import fontkit from '@pdf-lib/fontkit';
 import { saveAs } from "file-saver";
 import xandy from "./text-x-y";
 
