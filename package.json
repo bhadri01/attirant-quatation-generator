@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "file-saver": "^2.0.5",
     "next": "12.1.6",
+    "pdf-lib": "^1.17.1",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "sass": "^1.51.0"
   },
   "devDependencies": {
     "eslint": "8.15.0",
