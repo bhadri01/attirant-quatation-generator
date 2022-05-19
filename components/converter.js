@@ -4,7 +4,7 @@ import { saveAs } from "file-saver";
 import xandy from "./text-x-y";
 
 export default async function generatePDF(Qdata) {
-  const existingPdfBytes = await fetch("/qua.pdf").then((res) =>
+  const existingPdfBytes = await fetch("/pd.pdf").then((res) =>
     res.arrayBuffer()
   );
 
@@ -17,7 +17,7 @@ export default async function generatePDF(Qdata) {
   const firstPage = pages[0];
 
   //get font
-  const fontBytes = await fetch("/lt.ttf").then((res) => res.arrayBuffer());
+  const fontBytes = await fetch("/lote.ttf").then((res) => res.arrayBuffer());
 
   // Embed our custom font in the document
   const Font = await pdfDoc.embedFont(fontBytes);

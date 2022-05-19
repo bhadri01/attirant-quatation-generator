@@ -10,7 +10,7 @@ const obj = (x, y, s, f) => ({
 
 export default async function xandy(Page, Qdata, f) {
   const {
-    quatationNo,
+    quotationNo,
     qdate,
     companyName,
     companyWebsite,
@@ -41,17 +41,17 @@ export default async function xandy(Page, Qdata, f) {
   ];
 
   const qt =
-    parseInt(quatationNo) < 10
-      ? `#QTNO00${quatationNo}`
-      : `#QTNO0${quatationNo}`;
+    parseInt(quotationNo) < 10
+      ? `#QTNO00${quotationNo}`
+      : `#QTNO0${quotationNo}`;
 
   //qutation number
-  Page.drawText(qt, obj(510, 700, 10, f));
+  Page.drawText(qt, obj(500, 700, 10, f));
   //qutation Date
-  Page.drawText(qdate, obj(483, 657, 14, f));
+  Page.drawText(qdate, obj(483, 656, 14, f));
   //Client Address
-  Page.drawText(companyName, obj(30, 676, 16, f));
-  Page.drawText(companyWebsite, obj(30, 662, 14, f));
+  Page.drawText(String(companyName).toUpperCase(), obj(30, 676, 16, f));
+  Page.drawText(String(companyWebsite).toLowerCase(), obj(30, 662, 14, f));
   Page.drawText(companyCity, obj(30, 647, 14, f));
 
   //discription table

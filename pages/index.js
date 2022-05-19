@@ -13,7 +13,7 @@ const description = [
 
 export default function Home() {
   const [Qdata, setQdata] = useState({
-    quatationNo: "",
+    quotationNo: "",
     qdate: "",
     companyName: "",
     companyWebsite: "",
@@ -51,17 +51,17 @@ export default function Home() {
         />
       </Head>
       <header>
-        <h1>Quation Generator</h1>
+        <h1>Quotation Generator</h1>
         <article>
           <div className="qmain">
-            <label htmlFor="qno">quatation no</label>
+            <label htmlFor="qno">quotation no</label>
             <div>
               <input
                 type="text"
-                name="quatationNo"
+                name="quotationNo"
                 id="qno"
-                placeholder="Quatation Number"
-                value={Qdata.quatationNo}
+                placeholder="Quotation Number"
+                value={Qdata.quotationNo}
                 onChange={ValueHandler}
                 required
               />
