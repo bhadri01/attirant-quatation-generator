@@ -62,7 +62,7 @@ export default async function xandy(Page, Qdata, f) {
     let subtotal = 0;
     e.forEach((a) => {
       subtotal += parseInt(a);
-      Page.drawText(a, obj(x, y, 10, f));
+      Page.drawText(String(a), obj(x, y, 10, f));
       y -= 36;
     });
     Page.drawText(String(subtotal), obj(x, y, 10, f));

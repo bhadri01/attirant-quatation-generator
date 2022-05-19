@@ -15,7 +15,6 @@ export default async function generatePDF(Qdata) {
   // Get the first page of the document
   const pages = pdfDoc.getPages();
   const firstPage = pages[0];
-
   //get font
   const fontBytes = await fetch("/lote.ttf").then((res) => res.arrayBuffer());
 
@@ -37,5 +36,5 @@ export default async function generatePDF(Qdata) {
   var file = new Blob([pdfBytes], {
     type: "application/pdf;charset=utf-8",
   });
-  saveAs(file, "qutation.pdf");
+  saveAs(file, Qdata.companyName);
 }
